@@ -15,6 +15,29 @@ public class DesafioEncapsulamento38 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        Pessoa p[] = new Pessoa[2];
+        Livro l[] = new Livro[3];
+       
+        p[0] = new Pessoa("Matheus", 34, "29-12");
+        p[1] = new Pessoa("Rogerio", 33, "10-10");
+        
+        
+        l[0] = new Livro("RPG", "Mago",  3000, p[0]);
+        l[1] = new Livro("Vampiro", "Dracula", 900, p[1]);
+        l[2] = new Livro("Java Avançado", "Maria Candido", 800, p[0]);
+        
+        
+        l[0].abrir();
+        l[0].folhear(500);
+        l[0].avancarPagina();
+        System.out.println(l[0].detalhes());
+        
+        System.out.println(l[1].detalhes());
+        
     }
+    
+        
+        
+    
     
 }
