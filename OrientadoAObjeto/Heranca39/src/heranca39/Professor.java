@@ -8,7 +8,7 @@ package heranca39;
  *
  * @author matheus
  */
-public class Professor {
+public class Professor extends Pessoa{
 //    ATRIBUTOS
     private String especialidade;
     private float salario;
@@ -33,8 +33,8 @@ public class Professor {
     
     
     
-    public void receberAumento() {
-        
+    public void receberAumento(float aumento) {
+        this.salario += aumento;
     }
     
 }
