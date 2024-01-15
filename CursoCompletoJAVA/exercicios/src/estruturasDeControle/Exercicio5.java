@@ -4,21 +4,25 @@ import java.util.Scanner;
 
 public class Exercicio5 {
 	public static void main(String[] args) {
+		int contador = 0;
 		Scanner entrada = new Scanner(System.in);
+
+		System.out.println("Digite um numero para verificar se é primo: ");
+		int numero = entrada.nextInt();
 		
-		System.out.println("Digite um numero inteiro: ");
-		int primo = entrada.nextInt();
-		System.out.print("O numero " + primo);
-		for (int i = primo-1; i > 1; i--) {
-			int valor = primo%i;
-			switch(valor) {
-			case 0:
-				System.out.print(" não");
-				break;
+		for (int i = 2; i < numero; i++) {
+			if (numero % i == 0 ) {
+				contador++;
 			}
 		}
-		System.out.println(" é primo.");
 		
+		switch (contador) {
+		case 0:
+			System.out.println("O numero "+ numero +" é um numero primo.");
+			break;
+		default:
+			System.out.println("O numero "+ numero +" não é um numero primo.");
+		}
 		entrada.close();
 	}
 }
