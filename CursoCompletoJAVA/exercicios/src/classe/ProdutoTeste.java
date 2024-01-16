@@ -6,14 +6,13 @@ public class ProdutoTeste {
 		Produto p1 = new Produto("Notebook");
 //		p1.nome = "Notebook";
 		p1.preco = 4356.89;
-		p1.desconto = 0.25;
 		
-		var p3 = new Produto("Perfume", 500.5,0.25);
+		var p3 = new Produto("Perfume", 500.5);
 		
 		var p2 = new Produto();
 		p2.nome = "Caneta Preta";
 		p2.preco = 12.56;
-		p2.desconto = 0.29;
+//		Produto.desconto = 0.3;
 		
 		System.out.println(p1.nome);
 		System.out.println(p2.nome);
@@ -29,3 +28,4 @@ public class ProdutoTeste {
 		System.out.println(p3.nome + " = " + p3.preco);
 	}
 }
+ 
