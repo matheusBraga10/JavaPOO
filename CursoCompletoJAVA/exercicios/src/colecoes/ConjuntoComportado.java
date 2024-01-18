@@ -28,7 +28,7 @@ public class ConjuntoComportado {
 		nums.add(6);
 		
 		for (int n : nums) {
-			System.out.println(n);
+			System.out.println(n); 
 		}
 		
 	}
