@@ -2,8 +2,12 @@ package oo.composicao;
 
 public class Carro {
 	
-	Motor motor = new Motor();
+	final Motor motor;
 	
+	Carro() {
+		this.motor = new Motor(this);
+	}
+
 	void acelerar() {
 		if (motor.fatorInjecao<2.6) {
 			motor.fatorInjecao += 0.4;
@@ -27,4 +31,5 @@ public class Carro {
 	boolean estaLigado() {
 		return motor.ligado;
 	}
+	
 }
