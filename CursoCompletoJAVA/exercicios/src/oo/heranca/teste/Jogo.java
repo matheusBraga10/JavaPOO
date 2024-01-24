@@ -1,4 +1,8 @@
-package oo.heranca;
+package oo.heranca.teste;
+
+import oo.heranca.Direcao;
+import oo.heranca.Heroi;
+import oo.heranca.Monstro;
 
 public class Jogo {
 	public static void main(String[] args) {
@@ -20,6 +24,11 @@ public class Jogo {
 		System.out.println("Vida do monstro " + monster.vida);
 		System.out.println("Vida do heroi " + hero.vida);
 		
+		hero.andar(Direcao.SUL);
+		monster.andar(Direcao.NORTE);
+		
+		hero.posicao();
+		monster.posicao();
 		
 	}
 }

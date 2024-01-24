@@ -1,4 +1,7 @@
-package oo.heranca.desafio;
+package oo.heranca.teste;
+
+import oo.heranca.desafio.Fusca;
+import oo.heranca.desafio.Maverich;
 
 public class Teste {
 	public static void main(String[] args) {
