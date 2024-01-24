@@ -1,32 +1,55 @@
 package oo.heranca.desafio;
 
-public class Maverich extends Carro{
+public class Maverich extends Carro implements Esportivo, Luxo{
 	
-	
+	private boolean ligarTurbo = false;
+	private boolean ligarAr = false;
 	
 	public Maverich() {
 		super(220);
+		setDelta(15);
+	}
+
+
+	@Override
+	public void ligarTurbo() {
+		// TODO Auto-generated method stub
+		ligarTurbo = true;
+		setDelta(35);
 	}
 
 	@Override
-	public
-	int acelerar(Carro carro) {
-		if(velocidade <= VELOCIDADE_MAXIMA) {
-			carro.velocidade+=15;
-		} else {
-			velocidade = VELOCIDADE_MAXIMA;
-		} 
-		return velocidade;
+	public void desligarTurbo() {
+		// TODO Auto-generated method stub
+		ligarTurbo = false;
+		setDelta(15); 
+	}
+
+
+	@Override
+	public void ligarAr() {
+		// TODO Auto-generated method stub
+		ligarAr = true;
+	}
+
+
+	@Override
+	public void desligarAr() {
+		// TODO Auto-generated method stub
+		ligarAr = false;
+		
 	}
 	
 	@Override
-	public
-	int frear(Carro carro) {
-		if (velocidade >= 0 ) {
-			carro.velocidade-= 10;
+	public int getDelta() {
+		if(ligarTurbo && !ligarAr) {
+			return 35;
+		}else if(ligarTurbo && ligarAr) {
+			return 30;
+		} else if(!ligarTurbo && !ligarAr) {
+				return 15;
 		} else {
-			velocidade = 0;
+			return 10;
 		}
-		return velocidade;
 	}
 }
