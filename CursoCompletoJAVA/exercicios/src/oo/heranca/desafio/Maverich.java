@@ -9,6 +9,7 @@ public class Maverich extends Carro{
 	}
 
 	@Override
+	public
 	int acelerar(Carro carro) {
 		if(velocidade <= VELOCIDADE_MAXIMA) {
 			carro.velocidade+=15;
@@ -19,6 +20,7 @@ public class Maverich extends Carro{
 	}
 	
 	@Override
+	public
 	int frear(Carro carro) {
 		if (velocidade >= 0 ) {
 			carro.velocidade-= 10;
