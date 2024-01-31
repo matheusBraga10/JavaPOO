@@ -8,7 +8,7 @@ import java.util.function.Function;
 /*
  * 1. Número para string binária... 6 => "110"
  * 2. Inverter a string... "110" => "011"
- * 3. Converter de volta para inteiro => "011" => 3
+ * 3. Converter de volta para inteiro => "011" => 3	
  */
 
 public class DesafioMap {
