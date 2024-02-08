@@ -7,11 +7,8 @@ import java.sql.SQLException;
 public class TesteConexao {
 	public static void main(String[] args) throws SQLException {
 		
-		final String stringDeConexao = "jdbc:mysql://localhost/:3306?verifyServerCertificate=false&useSSL=true";
-		final String usuario = "root";
-		final String senha = "#M1a4***";
+		Connection conexao = FabricaConexao.getConexao();
 		
-		Connection conexao = DriverManager.getConnection(stringDeConexao, usuario, senha);
 		
 		
 		System.out.println("Conexão efetuada com sucesso!");
