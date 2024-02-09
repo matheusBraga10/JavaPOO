@@ -14,3 +14,4 @@
 /OrientadoAObjeto/Desafio41/build/
 /.metadata/
 CursoCompletoJAVA/exercicios/src/conexao.properties
+exercicios-jpa/src/main/java/META-INF/persistence.xml
