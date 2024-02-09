@@ -14,9 +14,11 @@ public class NovoUsuario {
 		
 		Usuario novoUsuario = new Usuario("Djalma", "djalma@lanche.com.br");
 		
-		novoUsuario.setId(1L);
+		em.getTransaction().begin();
 		em.persist(novoUsuario);
+		em.getTransaction().commit();
 		
+		System.out.println("O Id gerando foi: " + novoUsuario.getId() );
 		
 		em.close();
 		emf.close();
