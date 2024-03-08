@@ -15,14 +15,20 @@ public class ExemploCriacao {
 				.createEntityManagerFactory("Cliente-PU");
 		EntityManager entityManager = entityManagerFactory.createEntityManager();
 		
-		Cliente cliente = new Cliente();
+		Cliente cliente1 = new Cliente();
+		Cliente cliente2 = new Cliente();
+		Cliente cliente3 = new Cliente();
 //		cliente.setId(2); Geração automática de id em Cliente.java
-		cliente.setNome("Construtora Medeiros");
+		cliente1.setNome("Construtora Medeiros");
+		cliente2.setNome("Casas Bahia");
+		cliente3.setNome("EletroPaulo");
 
 		
 		entityManager.getTransaction().begin(); 	// Necessário para realizar commit (alterações no banco de dados)
 		
-		entityManager.persist(cliente); 			// Persiste a alteração para criação de novos dados no banco de dados
+		entityManager.persist(cliente1); 			// Persiste a alteração para criação de novos dados no banco de dados
+		entityManager.persist(cliente2); 			// Persiste a alteração para criação de novos dados no banco de dados
+		entityManager.persist(cliente3); 			// Persiste a alteração para criação de novos dados no banco de dados
 		
 		entityManager.getTransaction().commit();	// Necessário para realizar commit (alterações no banco de dados)
 		

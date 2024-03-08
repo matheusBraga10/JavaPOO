@@ -21,6 +21,7 @@ public class ExemploBusca {
 		
 		entityManager.persist(cliente);
 		
+		
 		entityManager.close();
 		entityManagerFactory.close();
 	}
