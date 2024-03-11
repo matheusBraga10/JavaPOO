@@ -1,4 +1,4 @@
-package com.algaworks.sistemaautenticacao.model;
+package com.algaworks.sistemaautenticacao.DTO;
 
 import java.util.Objects;
 
