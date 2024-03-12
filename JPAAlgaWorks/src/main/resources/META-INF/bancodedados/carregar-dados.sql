@@ -12,3 +12,5 @@ insert into configuracao (usuario_id, receber_notificacoes, encerrar_sessao_auto
 INSERT INTO cliente (cliente_id, cliente_nome) values (1, 'Casas Bahia');
 INSERT INTO cliente (cliente_id, cliente_nome) values (2, 'EletroPaulo');
 INSERT INTO cliente (cliente_id, cliente_nome) values (3, 'Moe´s bar');
+
+INSERT INTO  funcionario (id, versao, nome, salario, bancoDeHoras, valorHoraExtra) VALUES (1, 0, 'Cal Lightman', 5000, 20,100);
