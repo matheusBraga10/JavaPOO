@@ -19,18 +19,9 @@ public class Fornecedor {
 	private Endereco endereco;
 
 	public Fornecedor() {
-		super();
-		// TODO Auto-generated constructor stub
 	}
 	
 	
-
-	public Fornecedor(String nome) {
-		super();
-		this.nome = nome;
-	}
-
-
 
 	public long getId() {
 		return id;

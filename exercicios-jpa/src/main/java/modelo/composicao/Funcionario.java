@@ -19,16 +19,9 @@ public class Funcionario {
 	private Endereco endereco;
 
 	public Funcionario() {
-		super();
-		// TODO Auto-generated constructor stub
 	}
 	
 	
-
-	public Funcionario(String nome) {
-		super();
-		this.nome = nome;
-	}
 
 
 

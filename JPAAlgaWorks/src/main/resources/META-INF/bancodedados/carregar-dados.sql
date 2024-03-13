@@ -14,3 +14,5 @@ INSERT INTO cliente (cliente_id, cliente_nome) values (2, 'EletroPaulo');
 INSERT INTO cliente (cliente_id, cliente_nome) values (3, 'Moe´s bar');
 
 INSERT INTO  funcionario (id, versao, nome, salario, bancoDeHoras, valorHoraExtra) VALUES (1, 0, 'Cal Lightman', 5000, 20,100);
+
+INSERT INTO artigo (id, titulo, conteudo) VALUES (1, 'Titulo do artigo', 'Conteúdo do artigo');
