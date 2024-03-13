@@ -3,15 +3,17 @@ package modelo.composicao;
 import javax.persistence.Embeddable;
 
 @Embeddable
-public class Endereco {
+public class Endereco { 
 
 	private String logradouro;
 	private String complemento;
 	
 	
 	
+	public Endereco() {
+	}
+
 	public Endereco(String logradouro, String complemento) {
-		super();
 		this.logradouro = logradouro;
 		this.complemento = complemento;
 	}
