@@ -19,3 +19,5 @@ exercicios-jpa/src/main/java/META-INF/persistence.xml
 *.xml
 *.xml
 *.xml
+*.xml
+*.xml
