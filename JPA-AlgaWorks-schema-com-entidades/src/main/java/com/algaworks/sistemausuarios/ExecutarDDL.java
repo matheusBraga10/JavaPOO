@@ -19,7 +19,7 @@ public class ExecutarDDL {
         propriedades.put("javax.persistence.sql-load-script-source", "META-INF/banco-de-dados/carregar-dados.sql");
 
         EntityManagerFactory entityManagerFactory = Persistence
-                .createEntityManagerFactory("Usuarios-PU", propriedades);
+                .createEntityManagerFactory("Cliente-PU", propriedades);
 
 //        EntityManager entityManager = entityManagerFactory.createEntityManager();
 //        entityManager.close();
