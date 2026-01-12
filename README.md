@@ -4,7 +4,7 @@
 
 # Java POO - Programação Orientada a Objetos
 
-**Repositório da Pós-Graduação UTFPR**: Implementações práticas dos **4 pilares POO** + **padrões de projeto**. **Banco, estoque, biblioteca** com **JUnit 95% coverage** e **benchmarks JMH**.[attached_file:1]
+**Repositório da Pós-Graduação UTFPR**: Implementações práticas dos **4 pilares POO** + **padrões de projeto**. **Banco, estoque, biblioteca** com **JUnit 95% coverage** e **benchmarks JMH**.
 
 ## 📊 Benchmarks Performance
 
