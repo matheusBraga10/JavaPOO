@@ -161,16 +161,4 @@ BigData
 
 Stack:Java17MavenJUnit5
 
-
-## Implantação Imediata
-
-1. **Copie este README.md** em `JavaPOO/`
-2. **Adicione dependências Maven** (JUnit, Lombok, JMH)
-3. **Crie estrutura sugerida** com exemplos
-4. **Execute**: `mvn test` (95% coverage automático)
-5. **Commit**: `git commit -m "Add professional Java POO with benchmarks + JUnit"`
-
-Seu repo **Java POO** ficará **enterprise-grade** com **testes**, **benchmarks** e **padrões profissionais**! 🚀[1]
-
-
 Autor: Matheus Felipe Braga | Backend Java @ Prodemge | UTFPR Pós Java 2025
